@@ -9,6 +9,7 @@ $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/cocos)
 LOCAL_MODULE := cocos2dcpp_shared
 
 LOCAL_MODULE_FILENAME := libcocos2dcpp
+LOCAL_CFLAGS += -DCOCOS2D_DEBUG=1
 
 #LOCAL_SRC_FILES := hellocpp/main.cpp \
 #                   ../../Classes/AppDelegate.cpp \

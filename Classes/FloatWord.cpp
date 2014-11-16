@@ -29,6 +29,7 @@ bool FloatWord::init(const std::string& word,const int fontSize,Point begin)
 
 	_begin = begin;
 	Size visibleSize = Director::getInstance()->getVisibleSize();
+	_label = Label::create(word,"Verdana-Bold",fontSize);
 	_label->setPosition(begin);
 	this->addChild(_label);
 

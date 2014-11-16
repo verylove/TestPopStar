@@ -8,7 +8,7 @@
 #include "MenuLayer.h"
 
 #include "GameScene.h"
-
+#include "GameData.h"
 USING_NS_CC;
 
 
@@ -39,7 +39,8 @@ bool MenuLayer::init()
 	return true;
 }
 
-void MenuLayer::startGame(Ref* ref)
-{
+void MenuLayer::startGame(Ref* ref){
+	CCLOG("START!");
+	GAMEDATA::getInstance()->init();
 	Director::getInstance()->replaceScene(GameScene::create());
 }
